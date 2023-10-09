@@ -5,23 +5,13 @@ const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const images = [
-    { url: 'https://telegra.ph/file/1d5ae9d104855f2ee5e2c.jpg', description: 'Deskripsi Gambar 1' },
-    { url: 'https://telegra.ph/file/1d5ae9d104855f2ee5e2c.jpg', description: 'Deskripsi Gambar 2' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 3' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 4' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 5' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 6' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 7' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 8' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 9' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 10' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 11' },
-    { url: 'https://telegra.ph/file/your_image_url_here', description: 'Deskripsi Gambar 12' },
+    { url: 'https://telegra.ph/file/1d5ae9d104855f2ee5e2c.jpg', description: 'Deskripsi Gambar 1', downloadLink: 'https://example.com/download-link-1' },
+    { url: 'https://telegra.ph/file/1d5ae9d104855f2ee5e2c.jpg', description: 'Deskripsi Gambar 2', downloadLink: 'https://example.com/download-link-2' },
     // Tambahkan gambar dan deskripsi lainnya di sini
   ];
 
   const handleImageClick = (index) => {
-    alert('Harap tekan Tombol Download untuk mengunduh gambar.');
+    alert('Klik tombol "Download" untuk mengunduh gambar.');
   };
 
   const handleTextCopy = () => {
@@ -47,25 +37,11 @@ const Gallery = () => {
             />
             <div className="mt-2">
               <p onCopy={handleTextCopy}>{image.description}</p>
-              <Link href={image.url} download={`Image${index}.png`}>
-                <a className={`text-blue-500 hover:underline ${hoveredIndex === index ? 'opacity-75' : 'opacity-100'}`}>
-                  <div className="flex items-center">
-                    <span className="mr-2">Download</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </div>
+              <Link href={image.downloadLink}>
+                <a
+                  className={`text-white bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded-full cursor-pointer text-center block`}
+                >
+                  Download
                 </a>
               </Link>
             </div>
