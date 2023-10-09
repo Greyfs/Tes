@@ -16,10 +16,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>Starlynime - Portal berita seputar anime terlengkap</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Starlynime - Portal berita seputar anime"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,32 +27,26 @@ const Home = () => {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        pretitle="Apa itu Starlynime?"
+        title=" Berawal dari tim yang beranggotakan 3 orang">
+        Dengan berfokus pada tema channel dan forum komunitas pecinta anime, Starlynime memberikan wadah untuk berdiskusi, berbagi pandangan, dan terhubung dengan sesama penggemar anime.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        pretitle="Tonton video"
+        title="Kenapa kami membuat ini?">di bangun
+        Kami adalah komunitas yang berkembang bersama-sama, mendukung penggemar anime di seluruh dunia. Dan Website ini dibangun dengan menggunakan teknologi Next.js dan TailwindCSS.
       </SectionTitle>
       <Video />
       <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        pretitle="Apa yang akan kalian temui di Starlynime?"
+        title="3 anggota tim yang bisa berubah suatu saat">
+        Ke unggulan dari Starlynime dan segala isinya:
       </SectionTitle>
       <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+      <SectionTitle pretitle="FAQ" title="Tanya jawab">
+        Semua yang ada disini mungkin akan menjawab pertanyaan kalian semua
       </SectionTitle>
       <Faq />
       <Cta />
