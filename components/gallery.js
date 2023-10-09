@@ -3,8 +3,8 @@ import Link from 'next/link';
 const Gallery = () => {
   // Daftar gambar beserta deskripsi
   const images = [
-    { url: 'link_gambar_1.jpg', description: 'Deskripsi Gambar 1' },
-    { url: 'link_gambar_2.jpg', description: 'Deskripsi Gambar 2' },
+    { url: 'https://telegra.ph/file/1d5ae9d104855f2ee5e2c.jpg', description: 'Deskripsi Gambar 1' },
+    { url: 'https://telegra.ph/file/1d5ae9d104855f2ee5e2c.jpg', description: 'Deskripsi Gambar 2' },
     // Tambahkan gambar dan deskripsi lainnya di sini
   ];
 
