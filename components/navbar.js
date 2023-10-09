@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ThemeChanger from "./DarkSwitch"; // Pastikan Anda mengganti nama DarkSwitch sesuai dengan nama file ThemeChanger yang sebelumnya
+import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
 
@@ -32,10 +32,6 @@ const Navbar = () => {
                     <span>Starlynime</span>
                   </span>
                 </Link>
-                {/* Tambahkan ThemeChanger di sini */}
-                <div className="flex items-center space-x-2">
-                  <ThemeChanger />
-                </div>
                 {/* Tombol Toggle Menu */}
                 <Disclosure.Button
                   aria-label="Toggle Menu"
@@ -59,6 +55,8 @@ const Navbar = () => {
                     )}
                   </svg>
                 </Disclosure.Button>
+                {/* Tambahkan ThemeChanger di sini */}
+                <ThemeChanger />
                 {/* Panel Menu */}
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
