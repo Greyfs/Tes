@@ -2,7 +2,7 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
-import Gallery from "next/gallery";
+import gallery from "next/gallery";
 
 const Navbar = () => {
   const navigation = [
