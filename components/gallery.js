@@ -20,6 +20,14 @@ const Gallery = () => {
     // Tambahkan gambar dan deskripsi lainnya di sini
   ];
 
+  const handleImageClick = (index) => {
+    alert('Harap tekan Tombol Download untuk mengunduh gambar.');
+  };
+
+  const handleTextCopy = () => {
+    alert('Salinan teks dilarang.');
+  };
+
   return (
     <div className="container mx-auto mt-5 p-5">
       <h1 className="text-2xl font-bold mb-3">Gallery</h1>
@@ -30,6 +38,7 @@ const Gallery = () => {
             className="border p-3 rounded-lg transition-transform transform hover:scale-105"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
+            onClick={() => handleImageClick(index)}
           >
             <img
               src={image.url}
@@ -37,8 +46,28 @@ const Gallery = () => {
               className={`w-full h-auto ${hoveredIndex === index ? 'opacity-75' : 'opacity-100'}`}
             />
             <div className="mt-2">
-              <p>{image.description}</p>
-              <a href={image.url} download={`Image${index}.png`} className={`text-blue-500 hover:underline ${hoveredIndex === index ? 'opacity-75' : 'opacity-100'}`}>Download</a>
+              <p onCopy={handleTextCopy}>{image.description}</p>
+              <Link href={image.url} download={`Image${index}.png`}>
+                <a className={`text-blue-500 hover:underline ${hoveredIndex === index ? 'opacity-75' : 'opacity-100'}`}>
+                  <div className="flex items-center">
+                    <span className="mr-2">Download</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </Link>
             </div>
           </div>
         ))}
