@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Gallery from "next/gallery";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
+import Gallery from "../components/Gallery";
 
 const Navbar = () => {
   const navigation = [
