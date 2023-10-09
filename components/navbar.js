@@ -6,8 +6,8 @@ import { Disclosure } from "@headlessui/react";
 const Navbar = () => {
   const navigation = [
     { label: "Forum", link: "/forum" },
-    { label: "Gallery", link: "/gallery" },
-    { label: "Blog", link: "https://www.blog.com" }, // Ganti link sesuai dengan URL blog yang diinginkan
+    { label: "Gallery", link: "components/gallery" },
+    { label: "Blog", link: "https://www.starlynime.web.id" }, // Ganti link sesuai dengan URL blog yang diinginkan
   ];
 
   return (
@@ -65,7 +65,7 @@ const Navbar = () => {
                         {item.label}
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
+                    <Link href="https://www.starlynime.web.id" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
                       Mulai Adventure
                     </Link>
                   </>
