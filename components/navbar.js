@@ -3,7 +3,7 @@ import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
 import Gallery from "../components/gallery";
-import Forum from "../components/forum";
+
 
 const Navbar = () => {
   const navigation = [
