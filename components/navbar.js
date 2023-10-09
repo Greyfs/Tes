@@ -6,7 +6,7 @@ import { Disclosure } from "@headlessui/react";
 const Navbar = () => {
   const navigation = [
     { label: "Forum", link: "/forum" },
-    { label: "Gallery", link: "components/gallery" },
+    { label: "Gallery", link: "/gallery" },
     { label: "Blog", link: "https://www.starlynime.web.id" }, // Ganti link sesuai dengan URL blog yang diinginkan
   ];
 
