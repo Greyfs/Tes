@@ -35,22 +35,22 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Apa kita bisa jadi bagian dari kalian?",
+    answer: "Oh ya jelas, Website ini untuk komunitas terbuka untuk siapa aja",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Apa isi Konten Starlynime aman dan tidak ada NSFW?",
+    answer: "Kami akan membatasi segala konten sensitif, jika ada akan kami beri peringatan",
   },
   {
-    question: "What is your refund policy? ",
+    question: "Apa gambar di Gallery bebas pakai?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Ya, karena itu semua di buat dengan Teknologi Artificial intelegen",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Dimana komten utama kalian?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Kami ada di Youtube kami ada untuk semua orang di Youtube",
   },
 ];
 
