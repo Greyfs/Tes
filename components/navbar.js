@@ -7,7 +7,7 @@ import Gallery from "../components/gallery";
 
 const Navbar = () => {
   const navigation = [
-    { label: "Forum", link: "/forum" },
+    { label: "Forum", link: "https://www.starlynime.web.id/p/forum-anime-lovers.html" },
     { label: "Gallery", link: "/gallery" },
     { label: "Blog", link: "https://www.starlynime.web.id" }, // Ganti link sesuai dengan URL blog yang diinginkan
   ];
