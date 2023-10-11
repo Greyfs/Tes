@@ -6,7 +6,7 @@ import userOneImg from "../public/img/user1.jpg";
 import userTwoImg from "../public/img/user2.jpg";
 import userThreeImg from "../public/img/user3.jpg";
 
-const Ulasan  = () => {
+const Testimonials  = () => {
   return (
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
@@ -85,4 +85,4 @@ function Mark(props) {
   );
 }
 
-export default Ulasan;
+export default Testimonials;
