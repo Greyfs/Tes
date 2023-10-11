@@ -13,7 +13,7 @@ const Testimonials = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal">
-              Untuk membuat konten <Mark>berkualitas</Mark>, kami memiliki tim untuk terus memberikan informasi dan update seputar anime.
+              Untuk membuat konten berkualitas, kami memiliki tim untuk terus memberikan informasi dan update seputar anime.
             </p>
 
             <Avatar
@@ -26,7 +26,7 @@ const Testimonials = () => {
         <div className="">
           <div className="flex flex-col justify between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal">
-              Kami sebagai Blog website yang memberikan <Mark>berita</Mark> seputar anime akan menampilkan banyak informasi yang sedang trending dan panas untuk dibicarakan.
+              Kami sebagai Blog website yang memberikan berita seputar anime akan menampilkan banyak informasi yang sedang trending dan panas untuk dibicarakan.
             </p>
 
             <Avatar
@@ -39,7 +39,7 @@ const Testimonials = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal">
-              Selain banyaknya hal di atas, kami memperhatikan kualitas artikel kami, agar relevan untuk banyak <Mark>orang</Mark>.
+              Selain banyaknya hal di atas, kami memperhatikan kualitas artikel kami, agar relevan untuk banyak orang.
             </p>
 
             <Avatar
