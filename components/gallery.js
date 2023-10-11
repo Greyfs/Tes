@@ -4,8 +4,8 @@ const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const images = [
-    { url: 'https://telegra.ph/file/1d5ae9d104855f2ee5e2c.jpg', description: 'Deskripsi Gambar 1', downloadLink: 'https://example.com/download-link-1' },
-    { url: 'https://telegra.ph/file/1d5ae9d104855f2ee5e2c.jpg', description: 'Deskripsi Gambar 2', downloadLink: 'https://example.com/download-link-2' },
+    { url: 'https://telegra.ph/fi', description: 'Deskripsi Gambar 1', downloadLink: 'https://example.com/download-link-1' },
+    { url: 'https://telegra.', description: 'Deskripsi Gambar 2', downloadLink: 'https://example.com/download-link-2' },
     // Tambahkan gambar dan deskripsi lainnya di sini
   ];
 
