@@ -13,41 +13,39 @@ const Ulasan  = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Bagikan <Mark>ulasan</Mark> nyata
-              yang mencakup beberapa keuntungan dari salah satu pelanggan populer Anda.
+              Untuk membuat konten <Mark>berkualitas</Mark> kami memiliki tim untuk terus memberikan informasi dan update seputar anime
             </p>
 
             <Avatar
               image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales di Google"
+              name="3 orang team"
+              title="Kerja sama"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Pastikan Anda hanya memilih <Mark>kalimat yang tepat</Mark>
-              untuk menjaga agar pendek dan sederhana.
+              Kami sebagai Blog website yang memberikan </Mark>berita</Mark>seputar anime akan menampilkan banyak informasi, yang sedang trending dan panas untuk di bicarakan.
             </p>
 
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Pemasar Utama di Netflix"
+              name="Berita panas"
+              title="Topic yang sedang viral"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Ini adalah template halaman landing yang <Mark>keren</Mark> yang pernah saya lihat. Saya akan menggunakannya untuk segala hal.
+              Selain banyaknya hal di atas, kami memperhatikan kualitas artikel kami, agar revevan untuk banyak <Mark>Orang</Mark> 
             </p>
 
             <Avatar
               image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder dari Acme Inc"
+              name="Pembahasan yang terpilih"
+              title="Artikel yang berkualitas"
             />
           </div>
         </div>
