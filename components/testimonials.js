@@ -1,61 +1,58 @@
-import Image from "next/image";
 import React from "react";
+import { Image } from "next/image";
 import Container from "./container";
 
 import userOneImg from "../public/img/user1.jpg";
 import userTwoImg from "../public/img/user2.jpg";
 import userThreeImg from "../public/img/user3.jpg";
 
-const Testimonials  = () => {
+const Testimonials = () => {
   return (
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+            <p className="text-2xl leading-normal">
+              Untuk membuat konten <Mark>berkualitas</Mark>, kami memiliki tim untuk terus memberikan informasi dan update seputar anime.
             </p>
 
             <Avatar
               image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              name="3 orang team"
+              title="Kerja sama"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+            <p className="text-2xl leading-normal">
+              Kami sebagai Blog website yang memberikan <Mark>berita</Mark> seputar anime akan menampilkan banyak informasi yang sedang trending dan panas untuk dibicarakan.
             </p>
 
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              name="Berita panas"
+              title="Topic yang sedang viral"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve seen. I
-              would use this for anything.
+            <p className="text-2xl leading-normal">
+              Selain banyaknya hal di atas, kami memperhatikan kualitas artikel kami, agar relevan untuk banyak <Mark>orang</Mark>.
             </p>
 
             <Avatar
               image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              name="Pembahasan yang terpilih"
+              title="Artikel yang berkualitas"
             />
           </div>
         </div>
       </div>
     </Container>
   );
-}
+};
 
 function Avatar(props) {
   return (
@@ -63,8 +60,8 @@ function Avatar(props) {
       <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
         <Image
           src={props.image}
-          width="40"
-          height="40"
+          width={40}
+          height={40}
           alt="Avatar"
           placeholder="blur"
         />
