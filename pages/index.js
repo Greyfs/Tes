@@ -35,8 +35,7 @@ const Home = () => {
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
         pretitle="Tonton video"
-        title="Kenapa kami membuat ini?">di bangun
-        Kami adalah komunitas yang berkembang bersama-sama, mendukung penggemar anime di seluruh dunia. Dan Website ini dibangun dengan menggunakan teknologi Next.js dan TailwindCSS.
+        title="Kenapa kami membuat ini?">Kami adalah komunitas yang berkembang bersama-sama, mendukung penggemar anime di seluruh dunia. Dan Website ini dibangun dengan menggunakan teknologi Next.js dan TailwindCSS.
       </SectionTitle>
       <Video />
       <SectionTitle
