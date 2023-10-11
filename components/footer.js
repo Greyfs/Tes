@@ -4,8 +4,11 @@ import React from "react";
 import Container from "./container";
 
 export default function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
+  const footerLinks = [
+    { label: "Disclaimers", href: "/disclaimers" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "About", href: "/about" }
+  ];
 
   return (
     <div className="relative">
@@ -30,7 +33,8 @@ export default function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Situs para pecinta anime dan berita anime terbaru            </div>
+              Situs para pecinta anime dan berita anime terbaru
+            </div>
 
             <div className="mt-5">
               <a
@@ -51,26 +55,13 @@ export default function Footer() {
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
+              {footerLinks.map((link, index) => (
                 <Link
                   key={index}
-                  href="/"
+                  href={link.href}
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {legal.map((item, index) => (
-                <Link
-                  key={index}
-                  href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
-                  {item}
+                  {link.label}
                 </Link>
               ))}
             </div>
@@ -122,6 +113,9 @@ export default function Footer() {
     </div>
   );
 }
+
+// ... (Facebook, Instagram, dan Backlink components tetap sama)
+                    
 
 const Facebook = ({ size = 24 }) => (
   <svg
