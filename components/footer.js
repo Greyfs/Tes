@@ -5,9 +5,9 @@ import Container from "./container";
 
 export default function Footer() {
   const footerLinks = [
-    { label: "Disclaimers", href: "/disclaimers" },
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "About", href: "/about" }
+    { label: "Disclaimers", href: "https://www.starlynime.web.id/p/privacy-policy.html" },
+    { label: "Privacy Policy", href: "https://www.starlynime.web.id/p/privacy-policy.html" },
+    { label: "About", href: "https://www.starlynime.web.id/p/about-starlynime-welcome-to-starlynime.html" }
   ];
 
   return (
